@@ -21,7 +21,7 @@ def choose_file():
 def choose_caption():
     print ("Выбор описания")
     file_caption = str(file_name)[:-4]
-    default_caption = random.choice(open(r"config/default_captions.txt").readlines())
+    default_caption = random.choice(open(r"default_captions.txt").readlines())
     caption = file_caption
     if "undefined" or "rdt_20" or "daily" or "i made" in str(file_caption):
         caption = default_caption

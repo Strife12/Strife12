@@ -8,10 +8,11 @@ import time
 import sys
 import logging
 import modules
+logging.basicConfig(level=logging.INFO)
 
 from settings import BOT_TOKEN, admins, channel_ID, channel, srcdir, dscdir
 
-try:
+while True:
     modules.choose_file()
 
     modules.choose_caption()
@@ -21,12 +22,6 @@ try:
     modules.double_posting()
 
     modules.run_posting()
-except:
-    # перенести в папку с ошибкой
-    next try
 
-
-
-logging.basicConfig(level=logging.INFO)
 
 
