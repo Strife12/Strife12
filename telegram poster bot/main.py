@@ -12,15 +12,15 @@ import modules
 from settings import BOT_TOKEN, admins, channel_ID, channel, srcdir, dscdir
 
 try:
-    modules.choose_file
+    modules.choose_file()
 
-    modules.choose_caption
+    modules.choose_caption()
 
-    modules.posting_preparation
+    modules.posting_preparation()
 
-    modules.double_posting
+    modules.double_posting()
 
-    modules.run_posting
+    modules.run_posting()
 except:
     # перенести в папку с ошибкой
     next try
